@@ -20,7 +20,7 @@ public:
 	int GetWidth();
 	int GetHeight();
 private:
-	bool GetTexturePArams();
+	bool GetTextureParams();
 
 	int id;
 	int width;
