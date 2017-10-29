@@ -1,7 +1,6 @@
-// #pragma once - Windows Onle. Following code is cross platform:
-#ifndef AWO_ENGINE
-#define AWO_ENGINE
-#endif // !AWO_ENGINE
+#pragma once // Windows Onle. Following code is cross platform:
+//#ifndef AWO_ENGINE
+//#define AWO_ENGINE
 
 #include "GLFW\glfw3.h" // OpenGL
 #include <iostream>
@@ -26,3 +25,6 @@ private:
 	const static int Z_FAR;
 	static GLFWwindow* window;
 };
+
+// For cross platform - instead of #pragma once
+//#endif // !AWO_ENGINE
