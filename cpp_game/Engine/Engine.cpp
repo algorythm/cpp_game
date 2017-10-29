@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Engine.h"
 
 const int Engine::SCREEN_WIDTH = 1024;
@@ -17,7 +16,7 @@ Engine::~Engine()
 {
 }
 
-bool Engine::Initialize(char* _windowTitle) {
+bool Engine::Initialize(std::string _windowTitle) {
 	// Initialize OpenGL
 	if (!glfwInit()) {
 		std::cout << "[Error] Could not initialize GLFW." << std::endl;
@@ -25,7 +24,7 @@ bool Engine::Initialize(char* _windowTitle) {
 	}
 
 	// Create an OpenGL Window
-	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, _windowTitle, NULL, NULL);
+	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, _windowTitle.c_str(), NULL, NULL);
 	if (window == NULL) {
 		std::cout << "[ERROR] Could not create window." << std::endl;
 		return false;

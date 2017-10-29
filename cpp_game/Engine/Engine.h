@@ -4,6 +4,7 @@
 
 #include "GLFW\glfw3.h" // OpenGL
 #include <iostream>
+#include <string>
 #pragma comment(lib, "opengl32.lib") // TODO: not platform indeepndant - could probably be resolved by adding library manually
 
 class Engine
@@ -15,7 +16,7 @@ public:
 	Engine();
 	~Engine();
 
-	bool Initialize(char* _windowTitle);
+	bool Initialize(std::string _windowTitle);
 
 	void Update();
 	void Render();
