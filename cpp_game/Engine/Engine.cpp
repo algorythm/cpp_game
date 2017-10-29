@@ -64,12 +64,22 @@ void Engine::Update() {
 }
 
 void Engine::Render() {
+	this->BeginRender();
+
+
+
+
+
+	this->EndRender();
+}
+
+void Engine::BeginRender()
+{
 	glClearColor(0.2, .7, 0, 1); // Clear background with a blueish color
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
 
-	// Anything drawn before glfwSwapBuffers(window) will be rendered
-
+void Engine::EndRender()
+{
 	glfwSwapBuffers(window);
-
-	// Anything drawn here will not be renderd
 }

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "GLFW\glfw3.h"
-#include "SOIL\src\SOIL.h"
+#include "soil.h"
 
 #include <iostream>
 #include <string>
@@ -13,10 +13,9 @@ class Texture
 public:
 	Texture();
 	Texture(int _id);
-	Texture(std::string _path);
-	~Texture();
+	Texture(string _path);
 
-	int GetId();
+	int GetID();
 	int GetWidth();
 	int GetHeight();
 private:

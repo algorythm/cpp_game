@@ -20,6 +20,8 @@ public:
 
 	void Update();
 	void Render();
+	void BeginRender(); // TODO: should be private 
+	void EndRender();   // TODO: should be private 
 
 private:
 	const static int Z_NEAR;

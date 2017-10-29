@@ -20,7 +20,7 @@ Texture::Texture(string _path) {
 	}
 }
 
-int Texture::GetId()
+int Texture::GetID()
 {
 	return this->id;
 }
@@ -32,7 +32,7 @@ int Texture::GetWidth()
 
 int Texture::GetHeight()
 {
-	return this->height
+	return this->height;
 }
 
 bool Texture::GetTextureParams() {
