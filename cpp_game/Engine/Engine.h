@@ -2,7 +2,7 @@
 //#ifndef AWO_ENGINE
 //#define AWO_ENGINE
 
-#include "GLFW\glfw3.h" // OpenGL
+#include "GLFW/glfw3.h" // OpenGL
 #include <iostream>
 #include <string>
 #pragma comment(lib, "opengl32.lib") // TODO: not platform indeepndant - could probably be resolved by adding library manually
